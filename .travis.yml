@@ -1,8 +1,7 @@
 sudo: required
 dist: trusty
 
-before_install:
-  - curl -s https://raw.githubusercontent.com/Shopify/themekit/master/scripts/install | sudo python
+script: curl -s https://raw.githubusercontent.com/Shopify/themekit/master/scripts/install | sudo python
 deploy:
   # deploy master to production
   - provider: script
